@@ -8,3 +8,8 @@
 
 
 require_once __DIR__ . '/../vendor/autoload.php';
+
+function wootest_init(){
+    new \shop\Init();
+}
+wootest_init();
