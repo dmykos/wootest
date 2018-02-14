@@ -3,7 +3,9 @@
 namespace shop;
 
 
+use shop\postTypes\Movie;
 use shop\postTypes\ReviewShop;
+use shop\taxonomies\MovieCategory;
 
 class Settings {
 
@@ -28,7 +30,14 @@ class Settings {
     public static function postTypes()
     {
         return [
-            new Movie()
+            new Movie(),
+        ];
+    }
+
+    public static function taxonomies()
+    {
+        return [
+            new MovieCategory(),
         ];
     }
 }

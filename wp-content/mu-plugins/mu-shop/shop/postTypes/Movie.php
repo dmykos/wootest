@@ -2,6 +2,8 @@
 
 namespace shop\postTypes;
 
+use shop\taxonomies\MovieCategory;
+
 class Movie extends BasePostType
 {
     const POST_TYPE_NAME        = 'movie';
@@ -25,15 +27,21 @@ class Movie extends BasePostType
 
         $args = array(
             'labels'          => $labels,
-            'public'          => false,
+            'public'          => true,
             'show_ui'         => true,
             'show_in_menu'    => true,
-            'show_in_rest'    => false,
-            'query_var'       => false,
+            'show_in_rest'    => true,
+            'query_var'       => true,
+            'rewrite'         => true,
+            //'capability_type' => array(self::POST_TYPE_NAME, self::POST_TYPE_PLURAL_NAME),
+            //'map_meta_cap'    => false,
+            'has_archive'     => true,
             'menu_position'   => 26,
-            'menu_icon'       => 'dashicons-star-filled',
-            'supports'        => array('title'),
+            'menu_icon'       => 'dashicons-media-document',
+            'supports'        => array('title', 'editor', 'revisions', 'thumbnail'),
+            'taxonomies'      => array(MovieCategory::TAXONOMY_NAME),
         );
+
 
         register_post_type(self::POST_TYPE_NAME, $args);
     }
