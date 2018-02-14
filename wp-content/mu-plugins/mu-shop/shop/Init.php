@@ -9,6 +9,7 @@ use shop\taxonomies\BaseTaxonomy;
 class Init {
     public function __construct() {
         add_action('init', array( $this, 'initAction' ));
+        new Metaboxes();
     }
     public function initAction() {
         // Init post types
