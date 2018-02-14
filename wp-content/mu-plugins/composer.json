@@ -1,0 +1,13 @@
+{
+    "require-dev": {
+    },
+    "config": {
+    },
+    "autoload": {
+        "psr-4": {
+            "" : "mu-shop/"
+        }
+    },
+    "require": {
+    }
+}
