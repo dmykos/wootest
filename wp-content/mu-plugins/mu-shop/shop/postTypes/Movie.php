@@ -11,17 +11,17 @@ class Movie extends BasePostType
     public static function initPostType()
     {
         $labels = array(
-            'name'               => __('Movies', 'mu-loop'),
-            'singular_name'      => __('Movie', 'mu-loop'),
-            'add_new'            => _x('Add New', 'Movie', 'mu-loop'),
-            'add_new_item'       => __('Add New Movie', 'mu-loop'),
-            'edit_item'          => __('Edit Movie', 'mu-loop'),
-            'new_item'           => __('New Movie', 'mu-loop'),
-            'view_item'          => __('View Movie', 'mu-loop'),
-            'view_items'         => __('View Movie', 'mu-loop'),
-            'search_items'       => __('Search Movie', 'mu-loop'),
-            'not_found'          => __('No Movies found', 'mu-loop'),
-            'not_found_in_trash' => __('No Movies found in Trash', 'mu-loop'),
+            'name'               => __('Movies', 'mu-shop'),
+            'singular_name'      => __('Movie', 'mu-shop'),
+            'add_new'            => _x('Add New', 'Movie', 'mu-shop'),
+            'add_new_item'       => __('Add New Movie', 'mu-shop'),
+            'edit_item'          => __('Edit Movie', 'mu-shop'),
+            'new_item'           => __('New Movie', 'mu-shop'),
+            'view_item'          => __('View Movie', 'mu-shop'),
+            'view_items'         => __('View Movie', 'mu-shop'),
+            'search_items'       => __('Search Movie', 'mu-shop'),
+            'not_found'          => __('No Movies found', 'mu-shop'),
+            'not_found_in_trash' => __('No Movies found in Trash', 'mu-shop'),
 
         );
 

@@ -12,15 +12,15 @@ class MovieCategory extends BaseTaxonomy
     public static function initTaxonomy(){
         
         $labels         = array(
-            'name'          => _x('Movie Categories', 'Movie Categories', 'mu-loop'),
-            'singular_name' => _x('Movie Category', 'Movie Category', 'mu-loop'),
-            'search_items'  => __('Search Movie Categories', 'mu-loop'),
-            'all_items'     => __('All Movie Categories', 'mu-loop'),
-            'edit_item'     => __('Edit Movie Category', 'mu-loop'),
-            'update_item'   => __('Update Movie Category', 'mu-loop'),
-            'add_new_item'  => __('Add New Movie Category', 'mu-loop'),
-            'new_item_name' => __('New Movie Category Name', 'mu-loop'),
-            'not_found'     => __('No genres found', 'mu-loop'),
+            'name'          => _x('Movie Categories', 'Movie Categories', 'mu-shop'),
+            'singular_name' => _x('Movie Category', 'Movie Category', 'mu-shop'),
+            'search_items'  => __('Search Movie Categories', 'mu-shop'),
+            'all_items'     => __('All Movie Categories', 'mu-shop'),
+            'edit_item'     => __('Edit Movie Category', 'mu-shop'),
+            'update_item'   => __('Update Movie Category', 'mu-shop'),
+            'add_new_item'  => __('Add New Movie Category', 'mu-shop'),
+            'new_item_name' => __('New Movie Category Name', 'mu-shop'),
+            'not_found'     => __('No genres found', 'mu-shop'),
         );
 
         $args = array(
