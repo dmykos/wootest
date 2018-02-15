@@ -17,3 +17,8 @@ function wootest_init(){
 wootest_init();
 
 
+// Show selected movies after login
+add_filter( 'login_redirect', function( $url, $query, $user ) {
+    return get_term_link( 'best', 'movie_category' );
+}, 10, 3 );
+
