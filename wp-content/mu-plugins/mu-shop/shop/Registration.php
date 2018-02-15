@@ -6,7 +6,6 @@ namespace shop;
 
 class Registration {
     public function __construct() {
-       // add_action('init', array( $this, 'initAction' ));
         add_action('register_form', array( $this, 'registerFormFields' ));
 
         add_filter( 'registration_errors', array( $this, 'registrationErrors' ), 10, 3 );

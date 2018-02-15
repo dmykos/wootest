@@ -11,6 +11,7 @@ class Init {
         add_action('init', array( $this, 'initAction' ));
         new Metaboxes();
         new Registration();
+        new WooCommerce();
     }
     public function initAction() {
         // Init post types
