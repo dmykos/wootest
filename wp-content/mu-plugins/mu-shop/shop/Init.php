@@ -10,6 +10,7 @@ class Init {
     public function __construct() {
         add_action('init', array( $this, 'initAction' ));
         new Metaboxes();
+        new Registration();
     }
     public function initAction() {
         // Init post types
