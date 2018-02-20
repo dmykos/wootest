@@ -4,5 +4,7 @@ namespace shop\taxonomies;
 
 abstract class BaseTaxonomy
 {
-    abstract public static function initTaxonomy();
+    public static function initTaxonomy(){
+
+    }
 }
