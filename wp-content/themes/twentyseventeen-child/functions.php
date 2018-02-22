@@ -82,7 +82,7 @@ function woocommerce_product_get_price( $price, $product ) {
 add_filter('woocommerce_product_get_price','reigel_woocommerce_get_price',20,2);
 function reigel_woocommerce_get_price($price,$product){
     if ( get_post_type( $product->get_id() ) === 'movie'){
-        $price = get_post_meta($product->get_id(), "price", true);
+        $price = get_post_meta($product->get_id(), "movie_price", true);
     }
     return $price;
 }

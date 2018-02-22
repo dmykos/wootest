@@ -17,6 +17,7 @@ class Metaboxes {
                 'post_type'  => array('movie'),
                 'fields'     => array(
                     'subtitle' => array( 'title' => 'Movie Subtitle' ),
+                    'price' => array( 'title' => 'Price' ),
                 ),
             )
         );
