@@ -36,3 +36,7 @@ function property_slideshow( $content ) {
 }
 add_filter( 'the_content', 'property_slideshow' );
 
+
+
+
+

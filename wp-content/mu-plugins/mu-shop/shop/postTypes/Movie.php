@@ -38,7 +38,7 @@ class Movie extends BasePostType
             'has_archive'     => true,
             'menu_position'   => 26,
             'menu_icon'       => 'dashicons-media-document',
-            'supports'        => array('title', 'editor', 'revisions', 'thumbnail'),
+            'supports'        => array('title', 'editor', 'revisions', 'thumbnail', 'custom-fields' ),
             'taxonomies'      => array(MovieCategory::TAXONOMY_NAME),
         );
 
